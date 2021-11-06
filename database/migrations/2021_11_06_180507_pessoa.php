@@ -31,3 +31,4 @@ class Pessoa extends Migration
         Schema::dropIfExists('pessoa');
     }
 }
+ 
