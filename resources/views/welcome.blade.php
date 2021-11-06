@@ -9,6 +9,9 @@
             <button type="button" class="btn btn-primary">Left</button>
             <button type="button" class="btn btn-primary">Middle</button>
             <button type="button" class="btn btn-primary">Right</button>
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
           </div>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
