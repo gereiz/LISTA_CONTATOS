@@ -19,12 +19,6 @@ class CreateContatosTable extends Migration
             $table->string("nome");
             $table->string("telefone")->unique();
             $table->string("email")->unique();
-            $table->string("cep");
-            $table->string("logradouro");
-            $table->string("complemento")->nullable();
-            $table->string("bairro");
-            $table->string("localidade");
-            $table->string("uf");
 
             $table->timestamps();
         });

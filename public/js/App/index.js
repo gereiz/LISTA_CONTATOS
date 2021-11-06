@@ -72,12 +72,7 @@ function montarLinha(contato) {
             <td>${contato.nome}</td>
             <td>${contato.telefone}</td>
             <td>${contato.email}</td>
-            <td>${contato.cep}</td>
-            <td>${contato.logradouro}</td>
-            <td>${contato.bairro}</td>
-            <td>${contato.localidade}</td>
-            <td>${complemento}</td>
-            <td>${contato.uf}</td>
+
             <td>
                 <a type="button" title="Clique aqui para visualizar o contato" href="/contato/${contato.id}/edit" class="btn btn-info btn-lg">
                   <i class="fas fa-user"></i>

@@ -24,15 +24,10 @@ class ContatoRequest extends FormRequest
     public function rules()
     {
         $rules = [
-            'nome'         => "required|min:2|max:190",
-            'telefone'     => "required|min:10",
+            'nome'         => "required|min:5|max:190",
+            'telefone'     => "required|min:9",
             'email'        => "required|email",
-            'cep'          => "required",
-            'logradouro'   => "required",
-            'complemento',
-            'bairro'       => "required",
-            'localidade'   => "required",
-            'uf'           => "required|min:2"
+
         ];
 
         switch($this->method()) {
@@ -61,12 +56,7 @@ class ContatoRequest extends FormRequest
             'nome'         => "trim",
             'telefone'     => "trim",
             'email'        => "trim",
-            'cep'          => "trim",
-            'logradouro'   => "trim",
-            'complemento'  => "trim",
-            'bairro'       => "trim",
-            'localidade'   => "trim",
-            'uf'           => "trim"
+
         ];
     }
 }

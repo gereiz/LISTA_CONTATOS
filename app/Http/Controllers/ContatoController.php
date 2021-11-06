@@ -13,10 +13,6 @@ class ContatoController extends Controller
     /**
      * ContatoController constructor.
      */
-    public function __construct()
-    {
-        $this->middleware("auth");
-    }
 
     /**
      * Display a listing of the resource.
@@ -41,12 +37,6 @@ class ContatoController extends Controller
             return Contato::where("nome", "LIKE", "%$pesq%")
                 ->orWhere("telefone", "like", "%$pesq%")
                 ->orWhere("email", "like", "%$pesq%")
-                ->orWhere("cep", "like", "%$pesq%")
-                ->orWhere("logradouro", "like", "%$pesq%")
-                ->orWhere("complemento", "like", "%$pesq%")
-                ->orWhere("localidade", "like", "%$pesq%")
-                ->orWhere("uf", "like", "%$pesq%")
-                ->orWhere("bairro", "like", "%$pesq%")
                 ->paginate(10);
         } elseif ($pesqNome && $pesqEmail) {
             return Contato::where("nome", "LIKE", "%$pesqNome%")
