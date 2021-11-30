@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/georgiereis/public_html/agenda/
+    - /bin/cp * $DEPLOYPATH
